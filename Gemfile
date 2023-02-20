@@ -18,6 +18,12 @@ gem "puma", "~> 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
+# Bundle and process CSS in Rails with Tailwind, PostCSS, and Sass via Node.js.
+gem "cssbundling-rails", "~> 1.1"
+
+# Bundle and transpile JavaScript in Rails with esbuild, rollup.js, or Webpack.
+gem "jsbundling-rails", "~> 1.1"
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
@@ -25,7 +31,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
-gem "tailwindcss-rails"
+# gem "tailwindcss-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
