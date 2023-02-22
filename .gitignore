@@ -39,4 +39,6 @@
 .env
 .env.test
 
+Gemfile.lock
+
 /node_modules
