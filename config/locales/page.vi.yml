@@ -3,3 +3,13 @@ vi:
     users:
       title: User
       index: List
+      edit: Edit
+      update: Update
+      new: New
+  actions:
+    edit: Edit
+  labels:
+    edit: Edit
+  buttons:
+    create: Create
+    submit: Submit

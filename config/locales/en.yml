@@ -31,3 +31,7 @@
 
 en:
   site_name: Bookcare
+  email: Email
+  time:
+    formats:
+      default: '%m/%d/%Y %H:%M'
