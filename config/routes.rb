@@ -6,4 +6,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # Defines the administator path route ("/")
+  namespace :administrators do
+    resources :dashboard
+    resources :users
+  end
 end

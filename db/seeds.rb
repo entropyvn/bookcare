@@ -7,5 +7,6 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'require_all'
 
-require_relative './seed/**_seed'
+require_all Rails.root.join('db/seed')

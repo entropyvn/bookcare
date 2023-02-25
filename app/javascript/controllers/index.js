@@ -12,3 +12,6 @@ eagerLoadControllersFrom("controllers", application)
 
 import Notification from 'stimulus-notification'
 application.register('notification', Notification)
+
+import Dropdown from 'stimulus-dropdown'
+application.register('dropdown', Dropdown)

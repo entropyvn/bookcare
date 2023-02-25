@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -12,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_24_143921) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_25_063741) do
   create_table "action_text_rich_texts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name", null: false
     t.text "body", size: :long
@@ -82,6 +80,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_24_143921) do
     t.datetime "locked_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "fullname"
+    t.string "phone_number"
+    t.string "gender"
+    t.string "birthday"
+    t.string "address"
+    t.string "delete_at"
+    t.string "party_name"
+    t.string "party_type"
+    t.string "party_group"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
