@@ -15,3 +15,9 @@ application.register('notification', Notification)
 
 import Dropdown from 'stimulus-dropdown'
 application.register('dropdown', Dropdown)
+
+
+import Flatpickr from "stimulus-flatpickr"
+import "flatpickr/dist/flatpickr.css"
+
+application.register("flatpickr", Flatpickr)
