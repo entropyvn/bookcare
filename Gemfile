@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(File.join(File.dirname(__FILE__), '.ruby-version')).strip
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4", ">= 7.0.4.2"
+gem "rails", '~> 7.0.3'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -19,7 +19,7 @@ gem "puma", "~> 5.0"
 gem "importmap-rails"
 
 # Bundle and process CSS in Rails with Tailwind, PostCSS, and Sass via Node.js.
-# gem "cssbundling-rails", "~> 1.1"
+gem "cssbundling-rails", "~> 1.1"
 
 # Bundle and transpile JavaScript in Rails with esbuild, rollup.js, or Webpack.
 # gem "jsbundling-rails", "~> 1.1"
@@ -32,6 +32,12 @@ gem "stimulus-rails"
 
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
 gem "tailwindcss-rails"
+
+# Use Stimulus in your Ruby on Rails app
+gem 'stimulus-rails'
+
+# Use Turbo in your Ruby on Rails app
+gem 'turbo-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -55,7 +61,7 @@ gem "bootsnap", require: false
 gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 
 # Rails I18n de-facto standard library for ActiveRecord model/data translation.
 gem 'globalize'
@@ -70,7 +76,7 @@ gem 'pagy', '~> 5.10'
 gem 'pundit'
 
 # Flexible authentication solution for Rails with Warden.
-gem 'devise'
+gem 'devise', '~> 4.8.1'
 
 # OmniAuth is a flexible authentication system utilizing Rack middleware.
 gem 'omniauth'
@@ -105,6 +111,9 @@ gem 'lookbook', '~> 1.0.4'
 
 # Do some browser detection with Ruby. Includes ActionController integration.
 gem 'browser', '~> 5.3.1'
+
+# A wonderfully simple way to load Ruby code [https://github.com/jarmo/require_all]
+gem 'require_all'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

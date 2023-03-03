@@ -1,0 +1,7 @@
+<!-- app/views/administrators/users/activies/show.html.erb -->
+
+<turbo-frame id="<%= params.fetch :turbo_frame, dom_id(@user) %>">
+  <ul role="list" class="-mb-8">
+    <%= render @activites %>
+  </ul>
+</turbo-frame>

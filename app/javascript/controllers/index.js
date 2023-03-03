@@ -1,11 +1,23 @@
 // Import and register all your controllers from the importmap under controllers/*
 
-import { application } from "./application"
+import { application } from "controllers/application"
 
 // Eager load all controllers defined in the import map under controllers/**/*_controller
-// import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading"
-// eagerLoadControllersFrom("controllers", application)
+import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading"
+eagerLoadControllersFrom("controllers", application)
 
 // Lazy load controllers as they appear in the DOM (remember not to preload controllers in import map!)
 // import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
 // lazyLoadControllersFrom("controllers", application)
+
+import Notification from 'stimulus-notification'
+application.register('notification', Notification)
+
+import Dropdown from 'stimulus-dropdown'
+application.register('dropdown', Dropdown)
+
+
+import Flatpickr from "stimulus-flatpickr"
+import "flatpickr/dist/flatpickr.css"
+
+application.register("flatpickr", Flatpickr)

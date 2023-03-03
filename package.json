@@ -1,4 +1,5 @@
 {
-  "name": "app",
-  "private": "true"
+  "dependencies": {
+    "postcss-import": "^15.1.0"
+  }
 }
