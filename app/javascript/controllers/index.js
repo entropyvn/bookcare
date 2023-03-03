@@ -18,6 +18,4 @@ application.register('dropdown', Dropdown)
 
 
 import Flatpickr from "stimulus-flatpickr"
-import "flatpickr/dist/flatpickr.css"
-
 application.register("flatpickr", Flatpickr)

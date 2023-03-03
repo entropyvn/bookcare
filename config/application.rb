@@ -19,5 +19,12 @@ module Bookcare
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << 
     config.active_record.use_yaml_unsafe_load = true
+
+    # Locales
+    config.time_zone = 'Asia/Tokyo'
+    config.i18n.available_locales = I18n.available_locales
+    config.i18n.default_locale = I18n.default_locale
+    config.i18n.fallbacks = [I18n.default_locale]
+    config.i18n.fallbacks = true
   end
 end

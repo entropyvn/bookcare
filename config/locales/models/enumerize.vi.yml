@@ -1,0 +1,6 @@
+en:
+  enumerize:
+    gender:
+      male: Male
+      female: Female
+      other: 'N/A'

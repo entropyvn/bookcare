@@ -1,0 +1,9 @@
+vi:
+  pages:
+    users:
+      title: Người dùng
+      about: Giới thiệu
+      index: Danh sách
+      edit: Cập nhật thông tin
+      update: Cập nhật thông tin
+      new: Tạo mới người dùng

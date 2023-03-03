@@ -1,0 +1,10 @@
+en:
+  actions:
+    edit: Edit
+    delete: Delete
+  buttons:
+    create: Create
+    submit: Submit
+  labels:
+    edit: Edit
+    timeline: Timeline

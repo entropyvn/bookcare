@@ -1,0 +1,10 @@
+en:
+  actions:
+    edit: Chỉnh sửa
+    delete: Xoá
+  buttons:
+    create: Lưu lại
+    submit: Lưu lại
+  labels:
+    edit: Sửa
+    timeline: Nhật ký

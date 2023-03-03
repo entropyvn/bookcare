@@ -1,0 +1,9 @@
+vi:
+  activerecord:
+    errors:
+      blank: Vui lòng nhập dữ liệu
+    attributes:
+      user:
+        fullname: Họ và tên
+        phone_number: Số điện thoại
+        gender: Gới tính
