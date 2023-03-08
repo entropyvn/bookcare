@@ -7,3 +7,6 @@ vi:
         fullname: Họ và tên
         phone_number: Số điện thoại
         gender: Gới tính
+      category:
+        name: Ten danh muc
+        description: Mo ta
