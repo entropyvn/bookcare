@@ -1,0 +1,37 @@
+<div class="px-4 sm:px-6 lg:px-8">
+  <div class="sm:flex sm:items-center">
+    <div class="sm:flex-auto">
+      
+    </div>
+    <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+      <%= link_to t('pages.companies.create'), new_administrators_company_path, class: "block rounded-md bg-indigo-600 py-1.5 px-3 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
+    </div>
+  </div>
+  <div class="mt-8 flow-root">
+    <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+        <table class="min-w-full divide-y divide-gray-900">
+          <thead>
+            <tr>
+              <th scope="col" class="py-3.5 text-left text-sm font-semibold text-gray-900 sm:pl-0">
+                <%= Company.human_attribute_name :display_order %>
+              </th>
+              <th scope="col" class="text-left text-sm font-semibold text-gray-900">
+                <%= Company.human_attribute_name :name %>
+              </th>
+              <th scope="col" class="text-left text-sm font-semibold text-gray-900">
+                <%= Company.human_attribute_name :description %>
+              </th>
+              <th scope="col" class="text-left text-sm font-semibold text-gray-900">
+                <%= Company.human_attribute_name :action %>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="py-3.5 divide-y divide-gray-200 bg-white" >
+            <%= render @companies %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

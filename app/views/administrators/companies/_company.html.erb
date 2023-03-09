@@ -1,0 +1,17 @@
+<tr>
+  <td style="text-align:left" > 
+    <%= company.display_order %> 
+  </td>
+  <td style="text-align:left"> 
+    <%= company.name %> 
+  </td>
+  <td style="text-align:left"> 
+    <%= company.description %> 
+  </td>
+  <td style="text-align:left"> 
+    <%= link_to t('actions.edit'), edit_administrators_company_path(company) %> 
+    <%= link_to t('actions.show'), administrators_company_path(company) %>
+    <%= button_to t('actions.delete'), administrators_company_path(company), method: :delete, data: { turbo: true } %> 
+  </td> 
+</tr>
+

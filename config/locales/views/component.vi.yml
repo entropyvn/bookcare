@@ -2,6 +2,7 @@ en:
   actions:
     edit: Chỉnh sửa
     delete: Xoá
+    show: Chi tiết
   buttons:
     create: Lưu lại
     submit: Lưu lại
