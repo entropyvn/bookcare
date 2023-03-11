@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   # Defines the administator path route ("/administrators")
   namespace :administrators do
+    resources :categories
+
     namespace :users do
       resources :activities, only: :show
     end

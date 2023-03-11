@@ -2,3 +2,7 @@ en:
   message:
     updated: Updated
     update_failure: Update failure
+    categories:
+      actions:
+        destroyed: Xoa thanh cong
+        destroy_failure: Xoa khong thanh cong
