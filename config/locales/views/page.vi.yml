@@ -1,5 +1,7 @@
 vi:
   pages:
+    dashboard:
+      title: Dashboard
     users:
       title: Người dùng
       about: Giới thiệu
@@ -7,3 +9,17 @@ vi:
       edit: Cập nhật thông tin
       update: Cập nhật thông tin
       new: Tạo mới người dùng
+    categories:
+      title: Thể loại sách
+      about: Giới thiệu
+      index: Danh sách
+      edit: Cập nhật thông tin
+      update: Cập nhật thông tin
+      new: Tạo mới danh mục
+      add: Tạo nhanh
+      create: Tạo mới
+      show: Hiển thị
+    products:
+      title: Sản phẩm
+    reports:
+      title: Thống kê

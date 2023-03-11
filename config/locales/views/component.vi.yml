@@ -2,9 +2,14 @@ en:
   actions:
     edit: Chỉnh sửa
     delete: Xoá
+    show: Chi tiết
+    destroy: Xoá
+    cancel: Huỷ bỏ
   buttons:
     create: Lưu lại
     submit: Lưu lại
+    cancel: Quay lại
+    back: Trở về
   labels:
     edit: Sửa
     timeline: Nhật ký

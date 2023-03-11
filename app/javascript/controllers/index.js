@@ -1,5 +1,4 @@
 // Import and register all your controllers from the importmap under controllers/*
-
 import { application } from "controllers/application"
 
 // Eager load all controllers defined in the import map under controllers/**/*_controller
@@ -13,9 +12,19 @@ eagerLoadControllersFrom("controllers", application)
 import Notification from 'stimulus-notification'
 application.register('notification', Notification)
 
-import Dropdown from 'stimulus-dropdown'
+// import Dropdown from 'stimulus-dropdown'
+// application.register('dropdown', Dropdown)
+
+// import Flatpickr from "stimulus-flatpickr"
+// application.register("flatpickr", Flatpickr)
+
+// Import and register all TailwindCSS Components
+import { Alert, Autosave, Dropdown, Modal, Tabs, Popover, Toggle, Slideover } from "tailwindcss-stimulus-components"
+application.register('alert', Alert)
+application.register('autosave', Autosave)
 application.register('dropdown', Dropdown)
-
-
-import Flatpickr from "stimulus-flatpickr"
-application.register("flatpickr", Flatpickr)
+application.register('modal', Modal)
+application.register('tabs', Tabs)
+application.register('popover', Popover)
+application.register('toggle', Toggle)
+application.register('slideover', Slideover)

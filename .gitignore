@@ -39,6 +39,9 @@
 .env
 .env.test
 
+yarn-error.log
+
 Gemfile.lock
 
 /node_modules
+/vendor

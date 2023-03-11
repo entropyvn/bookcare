@@ -5,7 +5,13 @@
       <p class="mt-2 text-sm text-gray-700"></p>
     </div>
     <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
-      <%= link_to t('pages.users.create'), new_administrators_category_path, class: "block rounded-md bg-indigo-600 py-1.5 px-3 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
+      <div class="flex">
+        <%= link_to t('pages.categories.create'), new_administrators_category_path, class: "block rounded-md bg-indigo-600 py-1.5 px-3 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mr-2" %>
+        <%= link_to t('pages.categories.add'),
+                    new_administrators_category_path,
+                    class: "block rounded-md bg-indigo-600 py-1.5 px-3 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
+                    data: { turbo_frame: "modal" } %>
+      </div>
     </div>
   </div>
   <div class="mt-8 flow-root">
@@ -16,24 +22,20 @@
         <table class="min-w-full divide-y divide-gray-300">
           <thead>
             <tr>
-              <th><%= Category.human_attribute_name :name %></th>
-              <th><%= Category.human_attribute_name :description %></th>
-              <th></th>
+              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"><%= Category.human_attribute_name :display_order %></th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"><%= Category.human_attribute_name :name %></th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"><%= Category.human_attribute_name :description %></th>
+              <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6 lg:pr-8 w-1">
+                <span class="sr-only">Edit</span>
+              </th>
             </tr>
           </thead>
           <tbody>
-            <% @categories.each do |category| %>
-              <tr>
-                <td><%= category.name %></td>
-                <td><%= category.description %></td>
-                <td>
-                  <%= link_to t('actions.edit'), edit_administrators_category_path(category) %>
-                  <%= button_to t('actions.delete'), administrators_category_path(category), method: :delete, data: { turbo: true, turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
-                </td>
-              </tr>
-            <% end %>
+            <%= render @categories %>
           </tbody>
         </table>
+
+        <%== pagy_nav(@pagy) %> 
       </div>
     </div>
   </div>

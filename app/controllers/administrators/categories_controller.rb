@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
 module Administrators
+  # The category of the book
   class CategoriesController < ApplicationController
     before_action :find_category, only: %i[edit update destroy]
 
     def index
-      @categories = Category.all
+      @pagy, @categories = pagy(Category.all)
     end
 
     def new
@@ -22,13 +23,14 @@ module Administrators
       end
     end
 
-    def edit
-    end
+    def edit; end
 
     def update
       if @category.update(category_params)
+        flash[:success] = I18n.t('message.categories.actions.updated')
         redirect_to administrators_categories_path
       else
+        flash[:error] = I18n.t('message.categories.actions.update_failure')
         render :edit
       end
     end
@@ -45,7 +47,7 @@ module Administrators
     private
 
     def category_params
-      params.require(:category).permit( :name, :description)
+      params.require(:category).permit(:name, :description)
     end
 
     def find_category
