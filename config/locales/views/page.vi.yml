@@ -1,7 +1,9 @@
 vi:
   pages:
+    search:
+      search: Tìm kiếm
     dashboard:
-      title: Dashboard
+      title: Bảng điều khiển
     users:
       title: Người dùng
       about: Giới thiệu
@@ -18,7 +20,17 @@ vi:
       new: Tạo mới danh mục
       add: Tạo nhanh
       create: Tạo mới
-      show: Hiển thị
+      show: Thông tin chi tiết
+    companies:
+      title: Nhà xuất bản
+      about: Giới thiệu
+      index: Danh sách
+      edit:  Chỉnh sửa thông tin
+      update: Cập nhật thông tin
+      new: Tạo mới danh mục
+      add: Thêm nhanh
+      create: Tạo mới
+      show: Thông tin chi tiết
     products:
       title: Sản phẩm
     reports:

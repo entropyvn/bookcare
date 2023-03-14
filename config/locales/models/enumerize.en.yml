@@ -1,6 +1,6 @@
-vi:
+en:
   enumerize:
     gender:
-      male: Nam
-      female: Nữ
+      male: Male
+      female: Female
       other: 'N/A'

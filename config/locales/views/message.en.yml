@@ -1,8 +1,14 @@
 en:
   message:
-    updated: Updated
-    update_failure: Update failure
     categories:
       actions:
-        destroyed: Xoa thanh cong
-        destroy_failure: Xoa khong thanh cong
+        destroyed: Deleted
+        destroy_failure: Failed
+        updated: Updated
+        update_failure: Failed
+    companies:
+      actions:
+        destroyed: Deleted
+        destroy_failure: Failed
+        updated: Updated
+        update_failure: Failded

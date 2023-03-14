@@ -1,0 +1,11 @@
+<%= turbo_frame_tag "modal" do %>
+  <h1 class="h3 modal-header">
+    <%= t('pages.companies.add') %>
+  </h1>
+
+  <div class="modal-body">
+    <%= form_for @company, url: administrators_companies_path do |f|%>
+      <%= render "form", f: f %>
+    <% end %>
+  </div>
+<% end %>

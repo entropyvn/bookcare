@@ -1,4 +1,14 @@
-en:
+vi:
   message:
-    updated: Lưu lại thành công
-    update_failure: Lưu lại không thành công
+    categories:
+      actions:
+        destroyed:  Xóa thành công
+        destroy_failure: Xóa thất bại
+        updated: Lưu thành công
+        update_failure: Lưu thất bại
+    companies:
+      actions:
+        destroyed:  Xóa thành công
+        destroy_failure: Xóa thất bại
+        updated: Lưu thành công
+        update_failure: Lưu thất bại

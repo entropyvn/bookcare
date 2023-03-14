@@ -1,5 +1,7 @@
 en:
   pages:
+    dashboard:
+      title: Dashboard
     users:
       title: User
       about: Bio
@@ -7,4 +9,28 @@ en:
       edit: Edit
       update: Update
       new: New
+    categories:
+      title: Categories
+      about: About
+      index: List
+      edit: Edit information
+      update: Update information
+      new: Create new category
+      add: Quick create
+      create: Create new
+      show: Show
+    companies:
+      title: Publishers
+      about: About
+      index: List
+      edit: Edit information
+      update: Update information
+      new: Create new publisher
+      add: Quick add
+      create: Create new
+      show: Show
+    products:
+      title: Products
+    reports:
+      title: Statistics
 

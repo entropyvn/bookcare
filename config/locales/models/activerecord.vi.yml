@@ -7,8 +7,17 @@ vi:
         fullname: Họ và tên
         phone_number: Số điện thoại
         gender: Gới tính
+        status: Trạng thái
+        role: Vai trò
       category:
         name: Tên danh mục
+        description: Mô tả
+        thumbnail: Ảnh minh hoạ
+        display_order: Thứ tự
+        author_id: Người khởi tạo
+        created_at: Ngày khởi tạo
+      company:
+        name: Tên nhà xuất bản
         description: Mô tả
         thumbnail: Ảnh minh hoạ
         display_order: Thứ tự
