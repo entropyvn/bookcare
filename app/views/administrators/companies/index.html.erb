@@ -1,0 +1,42 @@
+<div class="px-4 sm:px-6 lg:px-8">
+  <div class="sm:flex sm:items-center">
+    <div class="sm:flex-auto">
+      <h1 class="text-base font-semibold leading-6 text-gray-900"><%= t('pages.companies.new') %></h1>
+      <p class="mt-2 text-sm text-gray-700"></p>
+    </div>
+    <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+      <div class="flex">
+        <%= link_to t('pages.companies.create'), new_administrators_company_path, class: "block rounded-md bg-indigo-600 py-1.5 px-3 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mr-2" %>
+        <%= link_to t('pages.companies.add'),
+                    new_administrators_company_path,
+                    class: "block rounded-md bg-indigo-600 py-1.5 px-3 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
+                    data: { turbo_frame: "modal" } %>
+      </div>
+    </div>
+  </div>
+  <div class="mt-8 flow-root">
+    <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+        <%= render 'layouts/shared/administrators/error_messages' %>
+
+        <table class="min-w-full divide-y divide-gray-300">
+          <thead>
+            <tr>
+              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"><%= Company.human_attribute_name :display_order %></th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"><%= Company.human_attribute_name :name %></th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"><%= Company.human_attribute_name :description %></th>
+              <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6 lg:pr-8 w-1">
+                <span class="sr-only">Edit</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= render @companies %>
+          </tbody>
+        </table>
+
+        <%== pagy_nav(@pagy) %> 
+      </div>
+    </div>
+  </div>
+</div>

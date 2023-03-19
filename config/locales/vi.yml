@@ -3,4 +3,4 @@ vi:
   email: Email
   time:
     formats:
-      default: '%m/%d/%Y %H:%M'
+      default: '%d/%m/%Y %H:%M'
